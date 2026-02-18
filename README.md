@@ -137,10 +137,10 @@ The Farmer Decision Dashboard is split into two strategic views:
 ## 👥 Contributors (Group 4)
 
 * **Khushi** (2401010225) - *Project Lead*
-* **Abhinav** (2401010017) - *Data Lead*
+* **Abhinav** (2401010017) - *Strategy Lead*
 * **Anshika** (2401010080) - *Dashboard Lead*
 * **Kshitiz** (2401010242) - *PPT & Quality Lead*
 * **Abhijeet** (2401010014) - *Analysis Lead*
-* **Nishant** (2401010302) - *Strategy Lead*
+* **Nishant** (2401010302) - *Data Lead*
 
 **Mentors:** Satyaki Sir & Ayushi Ma'am.
