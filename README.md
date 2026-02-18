@@ -2,7 +2,7 @@
 
 ### *Identifying the Best Market and Time to Sell for Maximum Returns*
 
-> **Capstone Project** | **Group 4 (Section B)** | **Newton School of Technology**
+> **Capstone Project** | **Group 4 (Section B)**
 > *February 2026*
 
 ---
@@ -19,6 +19,7 @@ Indian farmers often face suboptimal price realization due to information asymme
 
 * **Tech Stack:** Google Sheets (Data Cleaning, Feature Engineering, Dashboarding).
 
+![Dashboard](https://iili.io/q2ep6Mu.png)
 
 
 ---
@@ -29,14 +30,10 @@ The analysis covers agricultural data from **2018 to 2026**, sourced from Agmark
 
 | Dimension | Details |
 | --- | --- |
-| **Coverage** | 8 States, 8 Markets, 8 Commodities 
-
- |
-| **Time Period** | 2018 – 2026 (7 Years) 
-
- |
+| **Coverage** | 8 States, 8 Markets, 8 Commodities |
+| **Time Period** | 2018 – 2026 (7 Years) |
 | **Volume** | 6,000 Rows |
-| **Commodities** | Cotton, Maize, Onion, Potato, Rice, Soybean, Tomato, Wheat 
+| **Commodities** | Cotton, Maize, Onion, Potato, Rice, Soybean, Tomato, Wheat |
 
 
 ---
@@ -47,18 +44,10 @@ We engineered **5 Key Performance Indicators (KPIs)** to drive decision-making.
 
 | Column/KPI | Type | Description & Formula | Decision Relevance |
 | --- | --- | --- | --- |
-| **Modal Price** | Metric | Most frequent traded price (`₹/q`). | <br>*Revenue Proxy* 
-
- |
+| **Modal Price** | Metric | Most frequent traded price (`₹/q`). | <br>*Revenue Proxy* |
 | **Price Spread** | Derived | `Max_Price - Min_Price` | <br>*Volatility/Risk Signal* 
-
- |
 | **PPI** | Derived | **Price Position Index:** `(Modal - Min) / (Max - Min)` | <br>*Negotiation Power (0-1 score)* 
-
- |
 | **RMA** | Derived | **Relative Market Advantage:** `Modal - State Avg` | <br>*Location Choice (Premium vs. Avg)* 
-
- |
 | **Profit Opp.** | Flag | Composite Signal: `Top 25% Price + Positive RMA + PPI > 0.6` | <br>*Action Trigger (When to sell)* 
 
 
@@ -73,11 +62,10 @@ All cleaning was performed in Google Sheets. Key actions included:
 2. **Standardization:** Unified 8 variations of state names (e.g., 'maharashtra' vs 'MAHARASHTRA') using `PROPER()` and `TRIM()`.
 
 
-3. **Date Parsing:** Standardized mixed date formats to `DD-MM-YYYY` for accurate seasonality analysis.
+3. **Date Parsing:** Standardized mixed date formats to `DD/MM/YYYY` for accurate seasonality analysis.
 
 
-4. 
-**Outlier Validation:** Reviewed and corrected prices below ₹10 or above ₹50,000.
+4. **Outlier Validation:** Reviewed and corrected prices below ₹100 or above ₹50,000.
 
 
 
@@ -97,7 +85,7 @@ The analysis generated actionable intelligence for farmers and FPOs:
 
 * **May** is the peak selling month due to pre-monsoon supply tightening.
 
-**Rabi Season** crops consistently command better prices compared to Kharif or Summer harvests.
+* **Rabi Season** crops consistently command better prices compared to Kharif or Summer harvests.
 
 
 
@@ -105,7 +93,7 @@ The analysis generated actionable intelligence for farmers and FPOs:
 
 * Average market volatility (Spread) is **₹490/q**, indicating significant arbitrage potential.
 
-**Cotton and Soybean** show the highest spreads (₹700–900/q), suggesting high ROI on sorting/grading investments before sale.
+* **Cotton and Soybean** show the highest spreads (₹700–900/q), suggesting high ROI on sorting/grading investments before sale.
 
 
 
